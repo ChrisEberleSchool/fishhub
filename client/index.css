@@ -12,9 +12,14 @@ a {
   text-decoration: none;
 }
 body {
-  background: url("/assets/WebPage/background.jpg") no-repeat;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 70%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("/assets/WebPage/background.jpg") no-repeat center top;
   background-size: cover;
-  background-position: center;
+  background-attachment: fixed;
   min-height: 100vh;
 }
 @media (prefers-color-scheme: light) {

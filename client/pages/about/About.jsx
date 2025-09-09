@@ -35,10 +35,7 @@ export default function About() {
               Click <strong>Play Now</strong> on the homepage and create your
               account.
             </li>
-            <li>
-              Join or create a lobby, then walk to an empty fishing hole to
-              begin.
-            </li>
+            <li>Join a lobby, then walk to an empty fishing hole to begin.</li>
             <li>
               Reel in fish, interact with other players, and rise up the
               leaderboards.
@@ -72,7 +69,7 @@ export default function About() {
           <p>
             When a fish bites, a mini-game will appear with a hook meter. Your
             goal is to reel the hook to the surface without snapping the line.
-            The red bar indicates line tension—if it fills completely, the fish
+            The red bar indicates line tension. If it fills completely, the fish
             escapes.
           </p>
           <ol>
@@ -104,13 +101,11 @@ export default function About() {
 
         {/* Contact */}
         <section className="section contact-support">
-          <div className="contact-box">
-            <h2>Contact</h2>
-            <p>
-              Have questions, feedback, or suggestions? Reach out through our{" "}
-              <Link to="/contact">Contact Page</Link>.
-            </p>
-          </div>
+          <h2>Contact</h2>
+          <p>
+            Have questions, feedback, or suggestions? Reach out through our{" "}
+            <Link to="/contact">Contact Page</Link>.
+          </p>
         </section>
       </div>
     </main>
