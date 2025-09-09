@@ -5,26 +5,43 @@ export default function Updates() {
   return (
     <main id="updates">
       <Banner
-        title="Updates"
+        title="Game Updates"
         subtitle="Good things come to those who bait."
-        className="banner--contact"
+        className="banner--updates"
       />
 
-      <h1>Coming Soon</h1>
-      <ul>
-        <li>New purchasable items in the shop.</li>
-        <li>Additional maps to explore.</li>
-        <li>Rivers with unique fishing spots.</li>
-        <li>Improved fishing mechanics and mini-games.</li>
-      </ul>
+      <div className="updates-content">
+        {/* Coming Soon */}
+        <section className="section">
+          <h2>Coming Soon</h2>
+          <p>
+            We’re constantly expanding FishHub with new content and features to
+            keep the waters fresh. Here’s a sneak peek at what’s on the horizon:
+          </p>
+          <ul>
+            <li>Joinable lobbies</li>
+            <li>New purchasable items in the shop</li>
+            <li>Additional maps to explore</li>
+            <li>Rivers with unique fishing spots</li>
+            <li>Improved fishing mechanics and mini-games</li>
+          </ul>
+        </section>
 
-      <h1>Latest Updates</h1>
-      <ul>
-        <li>Introduced 16 new fish species.</li>
-        <li>Implemented the in-game shop UI.</li>
-        <li>Added a persistent global leaderboard.</li>
-        <li>General bug fixes and performance enhancements.</li>
-      </ul>
+        {/* Latest Updates */}
+        <section className="section">
+          <h2>Latest Updates</h2>
+          <p>
+            Check out the newest features and improvements we’ve recently added
+            to FishHub:
+          </p>
+          <ul>
+            <li>Introduced 16 new fish species</li>
+            <li>Implemented the in-game shop UI</li>
+            <li>Added a persistent global leaderboard</li>
+            <li>General bug fixes and performance enhancements</li>
+          </ul>
+        </section>
+      </div>
     </main>
   );
 }

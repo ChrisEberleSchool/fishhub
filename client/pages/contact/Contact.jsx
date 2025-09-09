@@ -33,40 +33,54 @@ export default function Contact() {
   }
 
   return (
-    <section className="contact-page">
+    <section className="contact-wrapper">
       <Banner
         title="Contact Us"
         subtitle="The fishing was good, but the catching sucked."
         className="banner--contact"
       />
+      <div className="contact-page">
+        <div className="contact-sections">
+          {/* Overview box */}
+          <div className="section overview">
+            <h2>Get in Touch</h2>
+            <p>
+              Have questions, feedback, or need help with FishHub? Use the form
+              below to send us a message — we’ll get back to you as soon as
+              possible.
+            </p>
+          </div>
 
-      <div className="contact-form-wrapper">
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <label>
-            <input
-              type="text"
-              placeholder="Your Name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-            />
-          </label>
+          {/* Form box */}
+          <div className="section form-section">
+            <form className="contact-form" onSubmit={handleSubmit}>
+              <label>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                />
+              </label>
 
-          <label>
-            <textarea
-              placeholder="Write your message here..."
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-            />
-          </label>
+              <label>
+                <textarea
+                  placeholder="Write your message here..."
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  required
+                />
+              </label>
 
-          <button type="submit" disabled={loading || message.length < 3}>
-            {loading ? "Sending..." : "Send"}
-          </button>
+              <button type="submit" disabled={loading || message.length < 3}>
+                {loading ? "Sending..." : "Send"}
+              </button>
 
-          {feedback && <p className="feedback">{feedback}</p>}
-        </form>
+              {feedback && <p className="feedback">{feedback}</p>}
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   );

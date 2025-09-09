@@ -1,0 +1,69 @@
+#about .content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Generic section styling */
+#about .section {
+  background: rgba(20, 20, 20, 0.85);
+  color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+#about .section p + ul,
+#about .section p + ol {
+  margin-top: 1rem;
+}
+
+/* Headings */
+#about h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+#about h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+/* Lists */
+#about ul,
+#about ol {
+  padding-left: 1.25rem;
+}
+
+#about li {
+  margin-bottom: 0.5rem;
+}
+
+/* Intro paragraph */
+#about .intro {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #e2e8f0;
+}
+
+/* Contact box specifically */
+.contact-support .contact-box {
+  background: rgba(30, 30, 30, 0.9);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contact-support a {
+  color: #38bdf8;
+  text-decoration: underline;
+}
